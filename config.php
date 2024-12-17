@@ -2,7 +2,7 @@
 
 return [
         "database" => [
-        "host" => "localhost",
+        "host" => "server43.areait.lv",
         "port" => "3306",
         "user" => "jekabsar_reader",
         "password" => "Christmas2022",

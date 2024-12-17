@@ -4,11 +4,11 @@ require "Database.php";
 $config = require("config.php");
 
 $db = new Database($config["database"]);
-$posts = $db->query("SELECT * FROM children")->fetchAll();
+$children = $db->query("SELECT * FROM children")->fetchAll();
 
 echo"<ul>";
-foreach($posts as $pos)
+foreach($children as $kid)
 {
-    echo "<li>" . $pos ["content"] . "</li>";
+    echo "<li>" . $kid ["firstname"]." ". $kid ["middlename"]." ". $kid ["surname"]." ". $kid["age"]." ". "</li>";
 }
 echo"</ul>"; 
